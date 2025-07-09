@@ -1,1 +1,1 @@
-# animes
+# animes-api
