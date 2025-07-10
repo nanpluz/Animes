@@ -1,0 +1,62 @@
+# ============================================
+# 📦 Build
+**/bin/
+**/obj/
+
+# ============================================
+# 📂 User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ============================================
+# 📁 VS/VS Code settings (opcional)
+.vs/
+.vscode/
+
+# ============================================
+# 📁 Rider settings (JetBrains)
+.idea/
+
+# ============================================
+# ⚙️ ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# ============================================
+# ⚡ Dotnet watch working folder
+**/node_modules/
+
+# ============================================
+# 🔑 Secret settings (ex: se usar user secrets local)
+*.secret.json
+
+# ============================================
+# 🐘 Logs
+*.log
+
+# ============================================
+# ⚠️ OS junk files
+Thumbs.db
+Desktop.ini
+
+# ============================================
+# 🗑️ Mac junk
+.DS_Store
+
+# ============================================
+# ⚙️ Paket dependency manager (se usar)
+.paket/
+paket-files/
+
+# ============================================
+# 📦 NuGet packages (apenas se usar pasta local)
+# Normalmente NÃO é necessário ignorar isso!
+# packages/
+
+# ============================================
+# 🔍 DotCover (JetBrains coverage)
+*.dotCover
+
+# ============================================
+# ✅ End of .gitignore
