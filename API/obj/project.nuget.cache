@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "7dCWseA+Y4A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\beto\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.1\\microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+    "C:\\Users\\beto\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\beto\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+  ],
+  "logs": []
+}
