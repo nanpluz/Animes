@@ -1,5 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using Infrastructure;
+using Infrastructure.Contexts;
+using MediatR;
+using AutoMapper;
+using Application.Mappers;
+using Application.Queries.Handlers;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +13,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddAutoMapper(typeof(AnimeProfile));
+
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(typeof(GetAnimesHandler).Assembly);
+});
 
 // Add DbContext
 builder.Services.AddDbContext<AnimesDbContext>(options =>

@@ -3,40 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95BA47DB-D04D-4CAC-ABB9-1851F73F30B3}|Infrastructure\\Infrastructure.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\infrastructure\\animesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95BA47DB-D04D-4CAC-ABB9-1851F73F30B3}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\animesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95BA47DB-D04D-4CAC-ABB9-1851F73F30B3}|Infrastructure\\Infrastructure.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{95BA47DB-D04D-4CAC-ABB9-1851F73F30B3}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B0414EF-D5FF-4899-A027-584111326601}|Domain\\Domain.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\domain\\entities\\anime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B0414EF-D5FF-4899-A027-584111326601}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\anime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AB36B81-3BE1-4A96-9E64-134B404DB06E}|Application\\Application.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AB36B81-3BE1-4A96-9E64-134B404DB06E}|Application\\Application.csproj|solutionrelative:application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|solutionrelative:api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AB36B81-3BE1-4A96-9E64-134B404DB06E}|Application\\Application.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\application\\mappers\\animeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AB36B81-3BE1-4A96-9E64-134B404DB06E}|Application\\Application.csproj|solutionrelative:application\\mappers\\animeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\api\\controllers\\animescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|solutionrelative:api\\controllers\\animescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AB36B81-3BE1-4A96-9E64-134B404DB06E}|Application\\Application.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\application\\dtos\\animedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AB36B81-3BE1-4A96-9E64-134B404DB06E}|Application\\Application.csproj|solutionrelative:application\\dtos\\animedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B0414EF-D5FF-4899-A027-584111326601}|Domain\\Domain.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\domain\\interfaces\\services\\animesfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B0414EF-D5FF-4899-A027-584111326601}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\services\\animesfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\api\\api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|solutionrelative:api\\api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CD829ECD-B553-426E-ADF0-B76E312619A6}|API\\API.csproj|solutionrelative:api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95BA47DB-D04D-4CAC-ABB9-1851F73F30B3}|Infrastructure\\Infrastructure.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\infrastructure\\repositories\\animerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95BA47DB-D04D-4CAC-ABB9-1851F73F30B3}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\animerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B0414EF-D5FF-4899-A027-584111326601}|Domain\\Domain.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\domain\\entities\\anime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B0414EF-D5FF-4899-A027-584111326601}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\anime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AB36B81-3BE1-4A96-9E64-134B404DB06E}|Application\\Application.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\application\\queries\\getanimesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AB36B81-3BE1-4A96-9E64-134B404DB06E}|Application\\Application.csproj|solutionrelative:application\\queries\\getanimesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AB36B81-3BE1-4A96-9E64-134B404DB06E}|Application\\Application.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\application\\queries\\handlers\\getanimeshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AB36B81-3BE1-4A96-9E64-134B404DB06E}|Application\\Application.csproj|solutionrelative:application\\queries\\handlers\\getanimeshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AB36B81-3BE1-4A96-9E64-134B404DB06E}|Application\\Application.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\application\\services\\animeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AB36B81-3BE1-4A96-9E64-134B404DB06E}|Application\\Application.csproj|solutionrelative:application\\services\\animeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B0414EF-D5FF-4899-A027-584111326601}|Domain\\Domain.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\domain\\interfaces\\repositories\\ianimerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B0414EF-D5FF-4899-A027-584111326601}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\repositories\\ianimerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95BA47DB-D04D-4CAC-ABB9-1851F73F30B3}|Infrastructure\\Infrastructure.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\infrastructure\\contexts\\animesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95BA47DB-D04D-4CAC-ABB9-1851F73F30B3}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\contexts\\animesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B0414EF-D5FF-4899-A027-584111326601}|Domain\\Domain.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\domain\\interfaces\\services\\ianimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B0414EF-D5FF-4899-A027-584111326601}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\services\\ianimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95BA47DB-D04D-4CAC-ABB9-1851F73F30B3}|Infrastructure\\Infrastructure.csproj|c:\\users\\beto\\desktop\\beto-git\\animes\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{95BA47DB-D04D-4CAC-ABB9-1851F73F30B3}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,122 +74,214 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Infrastructure",
-              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Infrastructure\\Infrastructure.csproj",
-              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
-              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Infrastructure\\Infrastructure.csproj",
-              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-10T13:23:03.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Application\\Class1.cs",
-              "RelativeDocumentMoniker": "Application\\Class1.cs",
-              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Application\\Class1.cs",
-              "RelativeToolTip": "Application\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "AnimeProfile.cs",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Application\\Mappers\\AnimeProfile.cs",
+              "RelativeDocumentMoniker": "Application\\Mappers\\AnimeProfile.cs",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Application\\Mappers\\AnimeProfile.cs",
+              "RelativeToolTip": "Application\\Mappers\\AnimeProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T13:17:42.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Anime.cs",
-              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Domain\\Entities\\Anime.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Anime.cs",
-              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Domain\\Entities\\Anime.cs",
-              "RelativeToolTip": "Domain\\Entities\\Anime.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T13:16:37.041Z",
+              "WhenOpened": "2025-07-10T17:06:27.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "API",
-              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\API.csproj",
-              "RelativeDocumentMoniker": "API\\API.csproj",
-              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\API.csproj",
-              "RelativeToolTip": "API\\API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-10T13:13:00.332Z",
+              "Title": "AnimeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Infrastructure\\Repositories\\AnimeRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\AnimeRepository.cs",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Infrastructure\\Repositories\\AnimeRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\AnimeRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T16:09:15.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AnimesDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Infrastructure\\AnimesDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\AnimesDbContext.cs",
-              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Infrastructure\\AnimesDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\AnimesDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T13:07:59.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "API",
-              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\API.csproj",
-              "RelativeDocumentMoniker": "API\\API.csproj",
-              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\API.csproj",
-              "RelativeToolTip": "API\\API.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-10T01:56:54.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\appsettings.json",
-              "RelativeDocumentMoniker": "API\\appsettings.json",
-              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\appsettings.json",
-              "RelativeToolTip": "API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-10T01:18:17.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
               "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\Program.cs",
               "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T00:12:48.002Z",
+              "WhenOpened": "2025-07-10T14:25:29.607Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "AnimeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Application\\DTOs\\AnimeDTO.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\AnimeDTO.cs",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Application\\DTOs\\AnimeDTO.cs",
+              "RelativeToolTip": "Application\\DTOs\\AnimeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T15:38:47.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnimesController.cs",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\Controllers\\AnimesController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AnimesController.cs",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\Controllers\\AnimesController.cs",
+              "RelativeToolTip": "API\\Controllers\\AnimesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T15:12:03.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Anime.cs",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Domain\\Entities\\Anime.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Anime.cs",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Domain\\Entities\\Anime.cs",
+              "RelativeToolTip": "Domain\\Entities\\Anime.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T16:36:26.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\Dockerfile",
               "RelativeDocumentMoniker": "API\\Dockerfile",
               "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\Dockerfile",
               "RelativeToolTip": "API\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAB7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-07-10T00:09:11.404Z",
+              "WhenOpened": "2025-07-10T18:26:06.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "API.csproj",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\API.csproj",
+              "RelativeDocumentMoniker": "API\\API.csproj",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\API\\API.csproj",
+              "RelativeToolTip": "API\\API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-10T17:58:54.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AnimesFilter.cs",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Domain\\Interfaces\\Services\\AnimesFilter.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\Services\\AnimesFilter.cs",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Domain\\Interfaces\\Services\\AnimesFilter.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\Services\\AnimesFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T15:51:01.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetAnimesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Application\\Queries\\GetAnimesQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Queries\\GetAnimesQuery.cs",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Application\\Queries\\GetAnimesQuery.cs",
+              "RelativeToolTip": "Application\\Queries\\GetAnimesQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T15:36:20.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GetAnimesHandler.cs",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Application\\Queries\\Handlers\\GetAnimesHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Queries\\Handlers\\GetAnimesHandler.cs",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Application\\Queries\\Handlers\\GetAnimesHandler.cs",
+              "RelativeToolTip": "Application\\Queries\\Handlers\\GetAnimesHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T15:44:13.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AnimeService.cs",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Application\\Services\\AnimeService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\AnimeService.cs",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Application\\Services\\AnimeService.cs",
+              "RelativeToolTip": "Application\\Services\\AnimeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T16:03:20.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAnimeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Domain\\Interfaces\\Repositories\\IAnimeRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\Repositories\\IAnimeRepository.cs",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Domain\\Interfaces\\Repositories\\IAnimeRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\Repositories\\IAnimeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T16:10:56.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AnimesDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Infrastructure\\Contexts\\AnimesDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Contexts\\AnimesDbContext.cs",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Infrastructure\\Contexts\\AnimesDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Contexts\\AnimesDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T14:25:23.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IAnimeService.cs",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Domain\\Interfaces\\Services\\IAnimeService.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\Services\\IAnimeService.cs",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Domain\\Interfaces\\Services\\IAnimeService.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\Services\\IAnimeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T15:48:12.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Infrastructure\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\beto\\Desktop\\beto-git\\Animes\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-10T16:02:34.273Z",
               "EditorCaption": ""
             }
           ]
