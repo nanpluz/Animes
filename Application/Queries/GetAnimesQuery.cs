@@ -1,11 +1,10 @@
 ﻿using Application.DTOs;
-using Domain.Interfaces.Services;
 using MediatR;
 
 namespace Application.Queries
 {
-    public class GetAnimesQuery(AnimesFilter filter) : IRequest<IEnumerable<AnimeDTO>>
+    public class GetAnimesQuery(GetAnimesRequest getAnimesRequest) : IRequest<IEnumerable<GetAnimesResponse>>
     {
-        public AnimesFilter filter { get; set; } = filter;
+        public GetAnimesRequest getAnimesRequest { get; set; } = getAnimesRequest;
     }
 }

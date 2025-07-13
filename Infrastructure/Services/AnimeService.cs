@@ -1,8 +1,8 @@
 ﻿using Domain.Entities;
-using Domain.Interfaces.Services;
-using Domain.Interfaces.Repositories;
+using Application.Interfaces.Services;
+using Application.Interfaces.Repositories;
 
-namespace Application.Services;
+namespace Infrastructure.Services;
 
 public class AnimeService : IAnimeService
 {
@@ -12,13 +12,13 @@ public class AnimeService : IAnimeService
     {
         _animeRepository = animeRepository;
     }
-    public async Task<IEnumerable<Anime>> GetAnimes(AnimesFilter filter)
+    public async Task<IEnumerable<Anime>> GetAnimes(Anime anime)
     {
-        return await _animeRepository.GetAnimesAsync(filter);
+        return await _animeRepository.GetAnimesAsync(anime);
     }
-    public async Task<bool> CreateAnime(Anime anime)
+    public async Task<bool> CreateAnimes(IEnumerable<Anime> animes)
     {
-        return await _animeRepository.CreateAnimeAsync(anime);
+        return await _animeRepository.CreateAnimesAsync(animes);
     }
     public async Task<bool> UpdateAnime(Anime anime)
     {

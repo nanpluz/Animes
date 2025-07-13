@@ -1,40 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Domain.Interfaces.Repositories;
+﻿using Microsoft.EntityFrameworkCore;
+using Application.Interfaces.Repositories;
 using Infrastructure.Contexts;
 using Domain.Entities;
-using Domain.Interfaces.Services;
 
 public class AnimeRepository(AnimesDbContext dbContext) : IAnimeRepository
 {
     private readonly AnimesDbContext _dbContext = dbContext;
 
-    public async Task<List<Anime>> GetAnimesAsync(AnimesFilter filter)
+    public async Task<List<Anime>> GetAnimesAsync(Anime anime)
     {
         var query = _dbContext.Animes.AsQueryable();
 
-        if (filter.Id > 0)
+        if (anime.Id > 0)
         {
-            query = query.Where(a => a.Id == filter.Id);
+            query = query.Where(a => a.Id == anime.Id);
         }
 
-        if (!string.IsNullOrWhiteSpace(filter.Name))
+        if (!string.IsNullOrWhiteSpace(anime.Name))
         {
-            query = query.Where(a => a.Name.Contains(filter.Name));
+            query = query.Where(a => a.Name.Contains(anime.Name));
         }
 
-        if (!string.IsNullOrWhiteSpace(filter.Director))
+        if (!string.IsNullOrWhiteSpace(anime.Director))
         {
-            query = query.Where(a => a.Director.Contains(filter.Director));
+            query = query.Where(a => a.Director.Contains(anime.Director));
         }
 
         return await query.ToListAsync();
     }
-    public async Task<bool> CreateAnimeAsync(Anime anime)
+    public async Task<bool> CreateAnimesAsync(IEnumerable<Anime> animes)
     {
-        _dbContext.Animes.Add(anime);
+        foreach (var anime in animes)
+        {
+            _dbContext.Animes.Add(anime);
+        }
         await _dbContext.SaveChangesAsync();
         return true;
     }

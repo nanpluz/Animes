@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using MediatR;
 using Application.DTOs;
-using Application.Queries;
-using Domain.Interfaces.Services;
+using Domain.Entities;
+using Application.Interfaces.Services;
 
 namespace Application.Queries.Handlers;
 
-public class GetAnimesHandler : IRequestHandler<GetAnimesQuery, IEnumerable<AnimeDTO>>
+public class GetAnimesHandler : IRequestHandler<GetAnimesQuery, IEnumerable<GetAnimesResponse>>
 {
     private readonly IAnimeService _animeService;
     private readonly IMapper _mapper;
@@ -17,10 +17,10 @@ public class GetAnimesHandler : IRequestHandler<GetAnimesQuery, IEnumerable<Anim
         _mapper = mapper;
     }
 
-    public async Task<IEnumerable<AnimeDTO>> Handle(GetAnimesQuery request, CancellationToken cancellationToken)
+    public async Task<IEnumerable<GetAnimesResponse>> Handle(GetAnimesQuery request, CancellationToken cancellationToken)
     {
-        var animes = await _animeService.GetAnimes(request.filter);
-        var animesDTO = _mapper.Map<IEnumerable<AnimeDTO>>(animes);
-        return animesDTO;
+        var filter = _mapper.Map<Anime>(request.getAnimesRequest);
+        var animes = await _animeService.GetAnimes(filter);
+        return _mapper.Map<IEnumerable<GetAnimesResponse>>(animes);
     }
 }

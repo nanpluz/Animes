@@ -1,7 +1,9 @@
-﻿using Domain.Interfaces.Services;
+﻿using Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Application.Queries;
+using Application.DTOs;
+using Application.Commands;
 
 namespace API.Controllers
 {
@@ -22,19 +24,19 @@ namespace API.Controllers
 
         [HttpGet]
         [Route("animes")]
-        public async Task<IActionResult> GetAnimes([FromQuery] AnimesFilter filter)
+        public async Task<IActionResult> GetAnimes([FromQuery] GetAnimesRequest getAnimesRequest)
         {
             try
             {
                 _logger.LogInformation("GetAnimes called");
 
-                var animes = await _mediator.Send(new GetAnimesQuery(filter));
+                var animes = await _mediator.Send(new GetAnimesQuery(getAnimesRequest));
                 return Ok(animes);
             }
             catch (ArgumentException ex)
             {
-                _logger.LogWarning(ex, "Error while getting animes");            
-                
+                _logger.LogWarning(ex, "Error while getting animes");
+
                 return BadRequest(ex.Message);
             }
             catch (Exception ex)
@@ -44,5 +46,23 @@ namespace API.Controllers
                 return StatusCode(500);
             }
         }
+
+        [HttpPost]
+        [Route("animes")]
+        public async Task<IActionResult> CreateAnimes([FromBody] IEnumerable<CreateAnimeRequest> createAnimeRequest)
+        {
+            var animes = await _mediator.Send(new CreateAnimesCommand(createAnimeRequest));
+
+            if (animes.created == false)
+            {
+                _logger.LogWarning("Error while creating anime");
+                return BadRequest("Error while creating anime");
+            }
+            else
+            {
+                _logger.LogInformation("Anime created successfully");
+                return Created();
+            }
+        } 
     }
 }

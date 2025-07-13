@@ -8,6 +8,9 @@ public class AnimeProfile : Profile
 {
     public AnimeProfile()
     {
-        CreateMap<Anime, AnimeDTO>();
+        CreateMap<GetAnimesRequest, Anime>();
+        CreateMap<Anime, GetAnimesResponse>();
+
+        CreateMap<CreateAnimeRequest, Anime>();
     }
 }
