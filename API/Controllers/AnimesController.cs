@@ -49,7 +49,7 @@ namespace API.Controllers
 
         [HttpPost]
         [Route("animes")]
-        public async Task<IActionResult> CreateAnimes([FromBody] IEnumerable<CreateAnimeRequest> createAnimeRequest)
+        public async Task<IActionResult> CreateAnimes([FromBody] IEnumerable<CreateAnimesRequest> createAnimeRequest)
         {
             var animes = await _mediator.Send(new CreateAnimesCommand(createAnimeRequest));
 
