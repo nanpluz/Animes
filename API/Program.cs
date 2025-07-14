@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Application.Mappers;
 using Application.Queries.Handlers;
 using Infrastructure.Contexts;
@@ -8,8 +8,18 @@ using Application.Interfaces.Repositories;
 using Asp.Versioning;
 using Asp.Versioning.ApiExplorer;
 using Application.Commands.Handlers;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()               // Ainda mostra no console
+    .WriteTo.File("Logs/app-.txt",   // Cria pasta Logs
+        rollingInterval: RollingInterval.Day) // Gera 1 arquivo por dia
+    .CreateLogger();
+
+// Substitui o logger padrão pelo Serilog
+builder.Host.UseSerilog();
 
 // Add services to the container.
 
@@ -59,7 +69,7 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<AnimesDbContext>();
-    dbContext.Database.Migrate(); // Vai aplicar migrations, incluindo criar banco se n�o existir
+    dbContext.Database.Migrate(); // Vai aplicar migrations, incluindo criar banco se não existir
 }
 
 // Configure the HTTP request pipeline.
