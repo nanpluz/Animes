@@ -24,13 +24,13 @@ namespace API.Controllers
 
         [HttpGet]
         [Route("animes")]
-        public async Task<IActionResult> GetAnimes([FromQuery] GetAnimesRequest getAnimesRequest)
+        public async Task<IActionResult> GetAnimes([FromQuery] GetAnimesQuery query)
         {
             try
             {
                 _logger.LogInformation("GetAnimes called");
 
-                var animes = await _mediator.Send(new GetAnimesQuery(getAnimesRequest));
+                var animes = await _mediator.Send(query);
                 return Ok(animes);
             }
             catch (Exception ex)

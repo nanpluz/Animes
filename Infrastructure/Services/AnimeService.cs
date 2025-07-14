@@ -12,9 +12,9 @@ public class AnimeService : IAnimeService
     {
         _animeRepository = animeRepository;
     }
-    public async Task<IEnumerable<Anime>> GetAnimes(Anime anime)
+    public async Task<IEnumerable<Anime>> GetAnimes(Anime filter)
     {
-        return await _animeRepository.GetAnimesAsync(anime);
+        return await _animeRepository.GetAnimesAsync(filter);
     }
     public async Task<bool> CreateAnimes(IEnumerable<Anime> animes)
     {

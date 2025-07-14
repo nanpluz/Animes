@@ -3,8 +3,8 @@ using MediatR;
 
 namespace Application.Queries
 {
-    public class GetAnimesQuery(GetAnimesRequest getAnimesRequest) : IRequest<IEnumerable<GetAnimesResponse>>
+    public class GetAnimesQuery(GetAnimesRequest request) : IRequest<IEnumerable<GetAnimesResponse>>
     {
-        public GetAnimesRequest getAnimesRequest { get; set; } = getAnimesRequest;
+        public GetAnimesRequest request { get; set; } = request;
     }
 }

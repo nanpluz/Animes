@@ -17,9 +17,9 @@ public class GetAnimesHandler : IRequestHandler<GetAnimesQuery, IEnumerable<GetA
         _mapper = mapper;
     }
 
-    public async Task<IEnumerable<GetAnimesResponse>> Handle(GetAnimesQuery request, CancellationToken cancellationToken)
+    public async Task<IEnumerable<GetAnimesResponse>> Handle(GetAnimesQuery query, CancellationToken cancellationToken)
     {
-        var filter = _mapper.Map<Anime>(request.getAnimesRequest);
+        var filter = _mapper.Map<Anime>(query.request);
         var animes = await _animeService.GetAnimes(filter);
         return _mapper.Map<IEnumerable<GetAnimesResponse>>(animes);
     }

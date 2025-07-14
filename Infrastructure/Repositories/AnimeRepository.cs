@@ -7,23 +7,23 @@ public class AnimeRepository(AnimesDbContext dbContext) : IAnimeRepository
 {
     private readonly AnimesDbContext _dbContext = dbContext;
 
-    public async Task<List<Anime>> GetAnimesAsync(Anime anime)
+    public async Task<List<Anime>> GetAnimesAsync(Anime filter)
     {
         var query = _dbContext.Animes.AsQueryable();
 
-        if (anime.Id > 0)
+        if (filter.Id > 0)
         {
-            query = query.Where(a => a.Id == anime.Id);
+            query = query.Where(a => a.Id == filter.Id);
         }
 
-        if (!string.IsNullOrWhiteSpace(anime.Name))
+        if (!string.IsNullOrWhiteSpace(filter.Name))
         {
-            query = query.Where(a => a.Name.Contains(anime.Name));
+            query = query.Where(a => a.Name.Contains(filter.Name));
         }
 
-        if (!string.IsNullOrWhiteSpace(anime.Director))
+        if (!string.IsNullOrWhiteSpace(filter.Director))
         {
-            query = query.Where(a => a.Director.Contains(anime.Director));
+            query = query.Where(a => a.Director.Contains(filter.Director));
         }
 
         return await query.ToListAsync();

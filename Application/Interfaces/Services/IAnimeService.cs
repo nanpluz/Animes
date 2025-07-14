@@ -4,7 +4,7 @@ namespace Application.Interfaces.Services;
 
 public interface IAnimeService
 {
-    Task<IEnumerable<Anime>> GetAnimes(Anime anime);
+    Task<IEnumerable<Anime>> GetAnimes(Anime filter);
     Task<bool> CreateAnimes(IEnumerable<Anime> anime);
     Task<bool> UpdateAnime(Anime anime);
     Task<bool> DeleteAnime(int Id);
