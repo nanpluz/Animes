@@ -7,6 +7,7 @@ using Application.Interfaces.Services;
 using Application.Interfaces.Repositories;
 using Asp.Versioning;
 using Asp.Versioning.ApiExplorer;
+using Application.Commands.Handlers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,6 +45,7 @@ builder.Services.AddApiVersioning(options =>
 builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(typeof(GetAnimesHandler).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(CreateAnimeHandler).Assembly);
 });
 
 // Add DbContext

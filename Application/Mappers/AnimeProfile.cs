@@ -12,6 +12,6 @@ public class AnimeProfile : Profile
         CreateMap<GetAnimesQuery, Anime>();
         CreateMap<Anime, GetAnimesResponse>();
 
-        CreateMap<CreateAnimesRequest, Anime>();
+        CreateMap<CreateAnimeRequest, Anime>();
     }
 }

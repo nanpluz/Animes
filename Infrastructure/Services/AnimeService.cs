@@ -16,9 +16,9 @@ public class AnimeService : IAnimeService
     {
         return await _animeRepository.GetAnimesAsync(filter);
     }
-    public async Task<bool> CreateAnimes(IEnumerable<Anime> animes)
+    public async Task CreateAnime(Anime anime)
     {
-        return await _animeRepository.CreateAnimesAsync(animes);
+        await _animeRepository.CreateAnimeAsync(anime);
     }
     public async Task<bool> UpdateAnime(Anime anime)
     {

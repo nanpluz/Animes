@@ -28,14 +28,10 @@ public class AnimeRepository(AnimesDbContext dbContext) : IAnimeRepository
 
         return await query.ToListAsync();
     }
-    public async Task<bool> CreateAnimesAsync(IEnumerable<Anime> animes)
+    public async Task CreateAnimeAsync(Anime anime)
     {
-        foreach (var anime in animes)
-        {
-            _dbContext.Animes.Add(anime);
-        }
+        _dbContext.Animes.Add(anime);
         await _dbContext.SaveChangesAsync();
-        return true;
     }
     public async Task<bool> UpdateAnimeAsync(Anime anime)
     {

@@ -45,20 +45,21 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAnimes([FromBody] IEnumerable<CreateAnimesRequest> createAnimeRequest)
+        public async Task<IActionResult> CreateAnime([FromBody] CreateAnimeRequest request)
         {
-            var animes = await _mediator.Send(new CreateAnimesCommand(createAnimeRequest));
+            try
+            {
+                _logger.LogInformation("CreateAnime called");
 
-            if (animes.created == false)
-            {
-                _logger.LogWarning("Error while creating anime");
-                return BadRequest("Error while creating anime");
+                await _mediator.Send(new CreateAnimeCommand(request));
+
+                return NoContent();
             }
-            else
+            catch(Exception ex)
             {
-                _logger.LogInformation("Anime created successfully");
-                return Created();
-            }
+                _logger.LogError(ex, "Error while creating animes");
+                return StatusCode(500);
+            } 
         } 
     }
 }
