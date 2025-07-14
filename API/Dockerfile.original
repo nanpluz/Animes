@@ -1,0 +1,23 @@
+# ⚡ Build stage (.NET 9)
+FROM mcr.microsoft.com/dotnet/sdk:9.0-preview AS build
+WORKDIR /app
+
+# Copia a solução e os projetos
+COPY ../*.sln ./
+COPY ../Domain/*.csproj ./Domain/
+COPY ../Application/*.csproj ./Application/
+COPY ../Infrastructure/*.csproj ./Infrastructure/
+COPY ./*.csproj ./
+
+RUN dotnet restore
+
+# Copia tudo e publica
+COPY .. ./
+RUN dotnet publish -c Release -o out
+
+# ⚡ Runtime stage (.NET 9)
+FROM mcr.microsoft.com/dotnet/aspnet:9.0-preview
+WORKDIR /app
+COPY --from=build /app/out .
+
+ENTRYPOINT ["dotnet", "API.dll"]
