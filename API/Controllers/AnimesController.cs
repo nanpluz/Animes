@@ -33,12 +33,6 @@ namespace API.Controllers
                 var animes = await _mediator.Send(new GetAnimesQuery(getAnimesRequest));
                 return Ok(animes);
             }
-            catch (ArgumentException ex)
-            {
-                _logger.LogWarning(ex, "Error while getting animes");
-
-                return BadRequest(ex.Message);
-            }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error while getting animes");
