@@ -27,6 +27,8 @@ namespace API.Controllers
 
 
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<GetAnimesResponse>))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetAnimes([FromQuery] GetAnimesRequest request)
         {
             try
@@ -45,6 +47,9 @@ namespace API.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> CreateAnime([FromBody] CreateAnimeRequest request)
         {
             try
@@ -59,7 +64,34 @@ namespace API.Controllers
             {
                 _logger.LogError(ex, "Error while creating animes");
                 return StatusCode(500);
+            }
+        }
+
+        [HttpPatch]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> UpdateAnime([FromBody] UpdateAnimeRequest request)
+        {
+            try
+            {
+                _logger.LogInformation("Update anime called");
+
+                await _mediator.Send(new UpdateAnimeCommand(request));
+
+                return NoContent();
             } 
-        } 
+            catch (KeyNotFoundException ex)
+            {
+                _logger.LogError("Did not find key while trying to update an anime");
+                return NotFound(new { message = ex.Message });
+            } 
+            catch(Exception ex)
+            {
+                _logger.LogError(ex, "Error while trying to update an anime");
+                return StatusCode(500);
+            }
+        }
     }
 }

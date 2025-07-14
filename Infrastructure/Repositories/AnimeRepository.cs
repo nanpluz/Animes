@@ -2,6 +2,7 @@
 using Application.Interfaces.Repositories;
 using Infrastructure.Contexts;
 using Domain.Entities;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 public class AnimeRepository(AnimesDbContext dbContext) : IAnimeRepository
 {
@@ -33,11 +34,22 @@ public class AnimeRepository(AnimesDbContext dbContext) : IAnimeRepository
         _dbContext.Animes.Add(anime);
         await _dbContext.SaveChangesAsync();
     }
-    public async Task<bool> UpdateAnimeAsync(Anime anime)
+    public async Task UpdateAnimeAsync(Anime anime)
     {
-        _dbContext.Animes.Update(anime);
+        var existingAnime = await _dbContext.Animes.FindAsync(anime.Id);
+        if (existingAnime == null)
+            throw new KeyNotFoundException("Anime not found");
+
+        if (!string.IsNullOrWhiteSpace(anime.Name))
+            existingAnime.Name = anime.Name;
+
+        if (!string.IsNullOrWhiteSpace(anime.Director))
+            existingAnime.Director = anime.Director;
+
+        if (!string.IsNullOrWhiteSpace(anime.Summary))
+            existingAnime.Summary = anime.Summary;
+
         await _dbContext.SaveChangesAsync();
-        return true;
     }
     public async Task<bool> DeleteAnimeAsync(int Id)
     {

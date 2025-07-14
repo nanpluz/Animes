@@ -20,9 +20,9 @@ public class AnimeService : IAnimeService
     {
         await _animeRepository.CreateAnimeAsync(anime);
     }
-    public async Task<bool> UpdateAnime(Anime anime)
+    public async Task UpdateAnime(Anime anime)
     {
-        return await _animeRepository.UpdateAnimeAsync(anime);
+        await _animeRepository.UpdateAnimeAsync(anime);
     }
     public async Task<bool> DeleteAnime(int Id)
     {

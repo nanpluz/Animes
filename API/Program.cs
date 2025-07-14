@@ -46,6 +46,7 @@ builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(typeof(GetAnimesHandler).Assembly);
     cfg.RegisterServicesFromAssembly(typeof(CreateAnimeHandler).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(UpdateAnimeHandler).Assembly);
 });
 
 // Add DbContext
