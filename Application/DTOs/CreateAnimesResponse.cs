@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.DTOs
 {
-    public class CreateAnimeResponse
+    public class CreateAnimesResponse
     {
         public bool created;
     }

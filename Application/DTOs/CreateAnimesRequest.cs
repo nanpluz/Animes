@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.DTOs
 {
-    public class CreateAnimeRequest
+    public class CreateAnimesRequest
     {
         public string Name { get; set; } = "";
         public string Director { get; set; } = "";

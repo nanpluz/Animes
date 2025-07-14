@@ -3,8 +3,8 @@ using MediatR;
 
 namespace Application.Commands
 {
-    public class CreateAnimesCommand(IEnumerable<CreateAnimeRequest> createAnimeRequest) : IRequest<CreateAnimeResponse>
+    public class CreateAnimesCommand(IEnumerable<CreateAnimesRequest> createAnimeRequest) : IRequest<CreateAnimesResponse>
     {
-        public IEnumerable<CreateAnimeRequest> createAnimeRequest = createAnimeRequest;
+        public IEnumerable<CreateAnimesRequest> createAnimeRequest = createAnimeRequest;
     }
 }

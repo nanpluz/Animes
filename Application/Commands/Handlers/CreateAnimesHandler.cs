@@ -6,7 +6,7 @@ using Domain.Entities;
 
 namespace Application.Commands.Handlers
 {
-    public class CreateAnimesHandler : IRequestHandler<CreateAnimesCommand, CreateAnimeResponse>
+    public class CreateAnimesHandler : IRequestHandler<CreateAnimesCommand, CreateAnimesResponse>
     {
         private readonly IAnimeService _animeService;
         private readonly IMapper _mapper;
@@ -17,11 +17,11 @@ namespace Application.Commands.Handlers
             _mapper = mapper;
         }
 
-        public async Task<CreateAnimeResponse> Handle(CreateAnimesCommand command, CancellationToken cancellationToken)
+        public async Task<CreateAnimesResponse> Handle(CreateAnimesCommand command, CancellationToken cancellationToken)
         {
             var animes = _mapper.Map<IEnumerable<Anime>>(command.createAnimeRequest);
             var createdAnimes = await _animeService.CreateAnimes(animes);
-            var createAnimeResponse = new CreateAnimeResponse();
+            var createAnimeResponse = new CreateAnimesResponse();
             createAnimeResponse.created = createdAnimes;
             return createAnimeResponse;
         }
