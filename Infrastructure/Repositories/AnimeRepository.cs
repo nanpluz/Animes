@@ -37,8 +37,7 @@ public class AnimeRepository(AnimesDbContext dbContext) : IAnimeRepository
     public async Task UpdateAnimeAsync(Anime anime)
     {
         var existingAnime = await _dbContext.Animes.FindAsync(anime.Id);
-        if (existingAnime == null)
-            throw new KeyNotFoundException("Anime not found");
+        if (existingAnime == null) throw new KeyNotFoundException("Anime not found");
 
         if (!string.IsNullOrWhiteSpace(anime.Name))
             existingAnime.Name = anime.Name;
@@ -51,12 +50,11 @@ public class AnimeRepository(AnimesDbContext dbContext) : IAnimeRepository
 
         await _dbContext.SaveChangesAsync();
     }
-    public async Task<bool> DeleteAnimeAsync(int Id)
+    public async Task DeleteAnimeAsync(int Id)
     {
         var anime = await _dbContext.Animes.FindAsync(Id);
-        if (anime == null) return false;
+        if (anime == null) throw new KeyNotFoundException("Anime not found");
         _dbContext.Animes.Remove(anime);
         await _dbContext.SaveChangesAsync();
-        return true;
     }
 }

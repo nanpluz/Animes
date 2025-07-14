@@ -76,7 +76,7 @@ namespace API.Controllers
         {
             try
             {
-                _logger.LogInformation("Update anime called");
+                _logger.LogInformation("UpdateAnime called");
 
                 await _mediator.Send(new UpdateAnimeCommand(request));
 
@@ -90,6 +90,33 @@ namespace API.Controllers
             catch(Exception ex)
             {
                 _logger.LogError(ex, "Error while trying to update an anime");
+                return StatusCode(500);
+            }
+        }
+
+        [HttpDelete]
+        [Route("/api/v{version:apiVersion}/[controller]/{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> DeleteAnime([FromRoute] int id)
+        {
+            try
+            {
+                _logger.LogInformation("DeleteAnime called");
+
+                await _mediator.Send(new DeleteAnimeCommand(id));
+
+                return NoContent();
+            }
+            catch (KeyNotFoundException ex)
+            {
+                _logger.LogError("Did not find key while trying to delete an anime");
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error while trying to delete an anime");
                 return StatusCode(500);
             }
         }

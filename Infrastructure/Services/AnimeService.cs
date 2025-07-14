@@ -24,8 +24,8 @@ public class AnimeService : IAnimeService
     {
         await _animeRepository.UpdateAnimeAsync(anime);
     }
-    public async Task<bool> DeleteAnime(int Id)
+    public async Task DeleteAnime(int Id)
     {
-        return await _animeRepository.DeleteAnimeAsync(Id);
+        await _animeRepository.DeleteAnimeAsync(Id);
     }
 }
