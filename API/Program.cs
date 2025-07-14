@@ -5,6 +5,8 @@ using Infrastructure.Contexts;
 using Infrastructure.Services;
 using Application.Interfaces.Services;
 using Application.Interfaces.Repositories;
+using Asp.Versioning;
+using Asp.Versioning.ApiExplorer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +24,22 @@ builder.Services.AddAutoMapper(typeof(AnimeProfile));
 builder.Services.AddScoped<IAnimeService, AnimeService>();
 
 builder.Services.AddScoped<IAnimeRepository, AnimeRepository>();
+
+builder.Services.AddApiVersioning(options =>
+{
+    options.DefaultApiVersion = new ApiVersion(1);
+    options.ReportApiVersions = true;
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.ApiVersionReader = ApiVersionReader.Combine(
+        new UrlSegmentApiVersionReader(),
+        new HeaderApiVersionReader("X-Api-Version"));
+})
+.AddMvc() 
+.AddApiExplorer(options =>
+{
+    options.GroupNameFormat = "'v'V";
+    options.SubstituteApiVersionInUrl = true;
+});
 
 builder.Services.AddMediatR(cfg =>
 {

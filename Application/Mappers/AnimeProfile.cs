@@ -1,4 +1,5 @@
 ﻿using Application.DTOs;
+using Application.Queries;
 using AutoMapper;
 using Domain.Entities;
 
@@ -8,7 +9,7 @@ public class AnimeProfile : Profile
 {
     public AnimeProfile()
     {
-        CreateMap<GetAnimesRequest, Anime>();
+        CreateMap<GetAnimesQuery, Anime>();
         CreateMap<Anime, GetAnimesResponse>();
 
         CreateMap<CreateAnimesRequest, Anime>();

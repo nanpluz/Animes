@@ -5,6 +5,9 @@ namespace Application.Queries
 {
     public class GetAnimesQuery(GetAnimesRequest request) : IRequest<IEnumerable<GetAnimesResponse>>
     {
-        public GetAnimesRequest request { get; set; } = request;
+        public int Id = request.Id;
+        public string Name = request.Name;
+        public string Director = request.Director;
+        public string Summary = request.Summary;
     }
 }

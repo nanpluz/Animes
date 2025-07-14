@@ -4,9 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 using Application.Queries;
 using Application.DTOs;
 using Application.Commands;
+using Asp.Versioning;
 
 namespace API.Controllers
 {
+    [ApiController]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class AnimesController : ControllerBase
     {
         private readonly ILogger<AnimesController> _logger;
@@ -23,14 +27,13 @@ namespace API.Controllers
 
 
         [HttpGet]
-        [Route("animes")]
-        public async Task<IActionResult> GetAnimes([FromQuery] GetAnimesQuery query)
+        public async Task<IActionResult> GetAnimes([FromQuery] GetAnimesRequest request)
         {
             try
             {
                 _logger.LogInformation("GetAnimes called");
 
-                var animes = await _mediator.Send(query);
+                var animes = await _mediator.Send(new GetAnimesQuery(request));
                 return Ok(animes);
             }
             catch (Exception ex)
@@ -42,7 +45,6 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        [Route("animes")]
         public async Task<IActionResult> CreateAnimes([FromBody] IEnumerable<CreateAnimesRequest> createAnimeRequest)
         {
             var animes = await _mediator.Send(new CreateAnimesCommand(createAnimeRequest));
